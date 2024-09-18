@@ -7,20 +7,20 @@ This repository contains the code and datasets for automating data cleaning and 
 - us_cities_reference.csv: Geographic location reference, used for cleaning purposes.
 - us_household_summary_statistics.csv: The final output file, created after joining cleaned household data with statistics for EDA.
 ## Process Overview
-### 1. Data Extraction and Loading
-Source: The data was extracted from Kaggle.
-The raw data is loaded into a table us_household_income_raw.
+### 1. Data Extraction and Loading [link] ()
+- Source: The raw data is sourced from Kaggle.
+- The raw datasets are loaded into a table called us_household_income_raw.
 ### 2. Manual Data Insertion
-A stored procedure inserts the raw data into an intermediate staging table named as us_household_income_intermediate.
+- A stored procedure is used to manually insert the raw data into a staging table named us_household_income_intermediate.
 ### 3. Automated Data Cleaning
-A trigger (in automatic_data_cleaning.sql) performs the automated data cleaning when data is inserted. Key cleaning steps include:
-- Removing duplicate records.
-- Proper casing for all values (e.g., city names).
-- Correcting misspelled data.
-- Standardizing and removing data inconsistencies.
-### 4. Final Data Load
-After cleaning, another trigger loads the final data into the us_household_income_cleaned table which is optimized for analysis.
+- An automated data cleaning process is triggered upon data insertion. This process, defined in automatic_data_cleaning.sql, includes the following key steps:
+- Removing duplicates: Any duplicate records are removed.
+- Standardizing case: Proper casing is applied to all values (e.g., city names).
+- Correcting spelling errors: Common misspellings are corrected.
+- Standardizing data: Inconsistencies in the data are addressed and standardized.
 
+### 4. Final Data Load
+- After the data cleaning is completed, a second trigger loads the cleaned data into the us_household_income_cleaned table, which is optimized for analysis.
 ## EDA
 ### 1: Distribution Plot of Household Income
 In the first step of my analysis, I explored the overall distribution of household income across the US. I created a distribution plot using binning techniques to capture the spread of income values. Upon analysis, I found that the data is right-skewed. This suggests that while a large proportion of households earn within a lower-to-middle income range, there is a smaller yet significant number of households earning much higher incomes, creating a long tail in the distribution.
