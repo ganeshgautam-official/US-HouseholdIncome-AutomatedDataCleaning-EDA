@@ -2,10 +2,10 @@
 This repository contains the code and datasets for automating data cleaning and performing exploratory data analysis (EDA) on US household income data.
 
 ## Datasets
-- USHouseholdIncome.csv: Contains US household and geographic information.
-- USHouseholdIncome_Statistics.csv: Includes statistical data like mean, median, standard deviation, and sum of wages (salary).
-- us_cities_reference.csv: Geographic location reference, used for cleaning purposes.
-- us_household_summary_statistics.csv: The final output file, created after joining cleaned household data with statistics for EDA.
+- [USHouseholdIncome.csv](https://github.com/iamganeshg18/US-HouseholdIncome-AutomatedDataCleaning-EDA/blob/main/data/USHouseholdIncome.csv): Contains US household and geographic information.
+- [USHouseholdIncome_Statistics.csv](https://github.com/iamganeshg18/US-HouseholdIncome-AutomatedDataCleaning-EDA/blob/main/data/USHouseholdIncome_Statistics.csv): Includes statistical data like mean, median, standard deviation, and sum of wages (salary).
+- [us_cities_reference.csv](https://github.com/iamganeshg18/US-HouseholdIncome-AutomatedDataCleaning-EDA/blob/main/data/us_cities_reference.csv): Geographic location reference, used for cleaning purposes.
+- [us_household_summary_statistics.csv](https://github.com/iamganeshg18/US-HouseholdIncome-AutomatedDataCleaning-EDA/blob/main/data/us_household_summary_statistics.csv): The final output file, created after joining cleaned household data with statistics for EDA.
 ## Process Overview
 ### [1. Data Extraction and Loading](https://github.com/iamganeshg18/US-HouseholdIncome-AutomatedDataCleaning-EDA/blob/main/create_load.sql)
 - Source: The raw data is sourced from Kaggle.
