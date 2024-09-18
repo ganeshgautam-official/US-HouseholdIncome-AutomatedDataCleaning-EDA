@@ -20,8 +20,6 @@ A trigger (in automatic_data_cleaning.sql) performs the automated data cleaning 
 - Standardizing and removing data inconsistencies.
 ### 4. Final Data Load
 After cleaning, another trigger loads the final data into the us_household_income_cleaned table which is optimized for analysis.
-### 5. View Creation for EDA
-A view is created by joining the clean household data with statistics data, ready for exploratory data analysis (EDA).
 
 ## EDA
 ### 1: Distribution Plot of Household Income
